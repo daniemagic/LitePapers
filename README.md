@@ -7,3 +7,4 @@ LitePapers takes the top 3 most relevant papers published on arXiV daily and dis
 Subscribe to the newsletter here:
 https://litepapers.ck.page/6853761302
 
+LLM Used: Mistral 7B
