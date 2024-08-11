@@ -16,11 +16,8 @@ def summarize_with_mistral(text):
         capture_output=True
     )
     
-    # Get the output
+    # Get the output and clean it
     output = result.stdout.strip()
-    error = result.stderr.strip()
+    output = output.replace("Summary: Summary:", "Summary:").strip()  # Remove duplicate Summary:
     
-    if error:
-        print(f"Mistral Error: {error}")
-        
     return output

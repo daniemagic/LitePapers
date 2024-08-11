@@ -28,6 +28,7 @@ def process_papers(papers):
             print(f"Failed to process paper: {paper.get('title', 'No title')}. Error: {str(e)}")
     return summaries
 
+
 def main():
     papers = fetch_ai_papers()
     if not papers:

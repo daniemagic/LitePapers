@@ -37,7 +37,7 @@ def fetch_ai_papers():
             }
             papers.append(paper)
             # Print the paper details immediately after fetching
-            print(f"Fetched Paper - Title: {paper['title']}")
+            print(f"Title: {paper['title']}")
             print(f"Summary: {paper['summary']}")
             print(f"Link: {paper['link']}\n")
 
