@@ -1,19 +1,15 @@
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime
 
 def fetch_ai_papers():
     print("Starting script...")
-
-    # Get today's date in the format YYYYMMDD
-    today = datetime.today().strftime('%Y%m%d')
 
     # Define the ArXiv API endpoint and query parameters
     try:
         print("Starting API request...")
         url = 'http://export.arxiv.org/api/query'
         params = {
-            'search_query': f'cat:cs.AI AND submittedDate:[{today}0000 TO {today}2359]',
+            'search_query': 'cat:cs.AI',
             'sortBy': 'submittedDate',
             'sortOrder': 'descending',
             'max_results': 3  # Fetch only 3 papers
