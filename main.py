@@ -1,6 +1,8 @@
 from fetch_paper import fetch_ai_papers
-from summarizer import summarize_with_mistral
 from startup_generator import generate_ideas
+from email_sender import send_email
+from summarizer import summarize_with_mistral
+
 
 def process_papers(papers):
     summaries = []
@@ -47,6 +49,10 @@ def main():
         print(f"2. {paper.get('idea2', 'No idea available')}")
         print(f"3. {paper.get('idea3', 'No idea available')}")
         print("-" * 50)
+    
+    # Prepare and send the email
+    send_email(startup_ideas, "EMAIL TO SEND TO")
+
 
 if __name__ == "__main__":
     main()

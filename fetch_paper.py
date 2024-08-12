@@ -11,7 +11,7 @@ def fetch_ai_papers():
         params = {
             'search_query': 'cat:cs.AI',
             'sortBy': 'submittedDate',
-            'sortOrder': 'descending',
+            'sortOrder': 'ascending',
             'max_results': 3  # Fetch only 3 papers
         }
 

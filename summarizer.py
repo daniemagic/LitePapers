@@ -5,7 +5,7 @@ def summarize_with_mistral(text):
     detailed_prompt = (
         "Act as a world-class researcher in every single field. "
         "Take this technical abstract and explain it in a way a layman can understand. "
-        "Include any key insights that a technical person would glean from it in order to create something applicable in the real world. Make your response no more than 4-5 sentences. Abstract: "
+        "Include any key insights that a technical person would glean from it in order to create something applicable in the real world. Make your response no more than 4-5 sentences. Do not restate the title in your response. Abstract: "
         f"{text}"
     )
     
@@ -18,5 +18,6 @@ def summarize_with_mistral(text):
     
     # Get the output and clean it
     output = result.stdout.strip()
+    
 
     return output
