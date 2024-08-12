@@ -8,3 +8,6 @@ Subscribe to the newsletter here:
 https://litepapers.ck.page/6853761302
 
 LLM Used: Mistral 7B
+
+To use:
+- Replace with your email and password and the email you want to send to in main.py and email_sender
